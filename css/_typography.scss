@@ -1,0 +1,68 @@
+.section__title {
+  font-family: $title-font;
+  font-size: 34px;
+  line-height: 1.25;
+  text-align: center;
+  color: $main-color-text;
+  padding-bottom: 20px;
+}
+.text-item {
+  font-family: $main-font;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  color: $main-color-text;
+}
+.text-item--info {
+  text-align: left;
+}
+.text-item--about {
+  padding-bottom: 25px;
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 45px;
+  }
+}
+.text-item--skills {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  @include media-breakpoint-up(lg) {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
+.item-title {
+  padding-top: 25px;
+  padding-bottom: 40px;
+  font-family: $title-font;
+  font-size: 14px;
+  line-height: 1.2;
+  color: $additional-color-text;
+  text-align: center;
+}
+.additional-text {
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 1.22;
+  text-align: center;
+  color: $additional-color-text;
+}
+.additional-link {
+  @extend .additional-text;
+  &:hover,
+  &:focus {
+    outline: none;
+    color: $color-link;
+    text-decoration: underline;
+  }
+}
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}

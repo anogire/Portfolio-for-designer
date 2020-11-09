@@ -1,0 +1,15 @@
+@mixin image-2x($file-name) {
+  @media (-webkit-min-device-pixel-ratio: 2), 
+        (min-resolution: 192dpi) {
+    background: linear-gradient(rgba(#0a223d, 0.8)), url("../img/#{$file-name}");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px
+)
